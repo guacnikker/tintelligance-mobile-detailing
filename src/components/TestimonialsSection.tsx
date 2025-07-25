@@ -115,7 +115,7 @@ const TestimonialsSection = () => {
               <div className="text-lg text-muted-foreground">Happy Customers</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-gradient">4.9★</div>
+              <div className="text-4xl font-bold text-gradient">5.0★</div>
               <div className="text-lg text-muted-foreground">Average Rating</div>
             </div>
             <div className="space-y-2">
