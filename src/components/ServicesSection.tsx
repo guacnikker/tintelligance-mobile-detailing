@@ -227,11 +227,12 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4">
-            Service Packages
+            Car Detailing Services in Southwest Florida
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Professional mobile car detailing packages in Naples, Fort Myers, Cape Coral, and throughout SWFL. 
             Choose from our three-tier system: Essential foundations, Elevated excellence, or Apex perfection.
-            Each package is crafted to deliver unmatched quality and attention to detail.
+            Each package includes ceramic coating, paint correction, and luxury car care services.
           </p>
         </div>
 

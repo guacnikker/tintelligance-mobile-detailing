@@ -1,14 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tintelligent-detailing.com/sitemap.xml
+
+# Specific bot permissions
 User-agent: Googlebot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Bingbot  
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: *
 Allow: /

@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="mb-8 flex justify-center">
           <img 
             src={tintelligentLogo} 
-            alt="Tintelligent Mobile Detailing"
+            alt="Tintelligent Mobile Detailing - Southwest Florida's premier car detailing service logo"
             className="h-32 w-32 md:h-40 md:w-40 rounded-full shadow-neon animate-pulse-neon"
           />
         </div>
@@ -44,11 +44,12 @@ const HeroSection = () => {
         
         {/* Tagline */}
         <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-4 font-light">
-          <span className="text-neon-magenta">SWFL's Best Luxury Detailers</span>
+          <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
         </p>
         <p className="text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto">
-          Experience the apex of automotive care with our premium exterior, interior, and hybrid detailing packages. 
-          We bring luxury-grade detailing directly to you.
+          Professional mobile car detailing in Naples, Fort Myers, Cape Coral & Southwest Florida. 
+          Premium exterior, interior, and hybrid detailing packages with ceramic coating and paint correction services. 
+          We bring luxury-grade automotive care directly to your location.
         </p>
         
         {/* CTA Buttons */}

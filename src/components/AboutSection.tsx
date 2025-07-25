@@ -21,7 +21,7 @@ const AboutSection = () => {
             <div className="relative overflow-hidden rounded-2xl">
               <img 
                 src={interiorDetailImage}
-                alt="Professional car detailing in progress"
+                alt="Professional mobile car detailing service in Southwest Florida - interior detailing work being performed by certified technicians"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
@@ -56,7 +56,7 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-black text-gradient mb-6">
-                About Tintelligent
+                About Tintelligent Mobile Detailing
               </h2>
               <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
                 <p>
