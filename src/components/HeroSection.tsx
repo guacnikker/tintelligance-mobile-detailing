@@ -58,9 +58,9 @@ const HeroSection = () => {
             variant="hero" 
             size="xl"
             className="w-full sm:w-auto group"
-            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open('tel:239-834-2126')}
           >
-            Book Your Detail Today
+            Call Now to Book
             <ArrowDown className="ml-2 h-5 w-5 group-hover:animate-bounce" />
           </Button>
           

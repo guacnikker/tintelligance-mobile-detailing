@@ -213,9 +213,9 @@ const ServicesSection = () => {
           <Button 
             variant="neon" 
             className="w-full"
-            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open('tel:239-834-2126')}
           >
-            Book {pkg.tier} Package
+            Call to Book {pkg.tier}
           </Button>
         </CardContent>
       </Card>

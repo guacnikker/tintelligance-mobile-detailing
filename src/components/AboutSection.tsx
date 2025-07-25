@@ -109,9 +109,9 @@ const AboutSection = () => {
               <Button 
                 variant="outline_neon" 
                 size="lg"
-                onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.open('tel:239-834-2126')}
               >
-                Book Now
+                Call Now
               </Button>
             </div>
 

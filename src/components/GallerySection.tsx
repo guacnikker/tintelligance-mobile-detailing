@@ -115,14 +115,14 @@ const GallerySection = () => {
         {/* Call to Action */}
         <div className="text-center">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to see your vehicle transformed? Book your detail today.
+            Ready to see your vehicle transformed? Call us today to schedule.
           </p>
           <Button 
             variant="hero" 
             size="lg"
-            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open('tel:239-834-2126')}
           >
-            Book Your Detail
+            Call to Book
           </Button>
         </div>
       </div>
