@@ -3,27 +3,31 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Award, Clock, MapPin } from "lucide-react";
 import interiorDetailImage from "@/assets/interior-detail.jpg";
-
 const AboutSection = () => {
-  const stats = [
-    { icon: Star, value: "500+", label: "Happy Customers" },
-    { icon: Award, value: "SWFL", label: "Best Detailers" },
-    { icon: Clock, value: "2025", label: "Est. Year" },
-    { icon: MapPin, value: "Mobile", label: "Service" }
-  ];
-
-  return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-card">
+  const stats = [{
+    icon: Star,
+    value: "500+",
+    label: "Happy Customers"
+  }, {
+    icon: Award,
+    value: "SWFL",
+    label: "Best Detailers"
+  }, {
+    icon: Clock,
+    value: "2025",
+    label: "Est. Year"
+  }, {
+    icon: MapPin,
+    value: "Mobile",
+    label: "Service"
+  }];
+  return <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-card">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl">
-              <img 
-                src={interiorDetailImage}
-                alt="Professional mobile car detailing service in Southwest Florida - interior detailing work being performed by certified technicians"
-                className="w-full h-[500px] object-cover"
-              />
+              <img src={interiorDetailImage} alt="Professional mobile car detailing service in Southwest Florida - interior detailing work being performed by certified technicians" className="w-full h-[500px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
               
               {/* Floating Badge */}
@@ -36,19 +40,11 @@ const AboutSection = () => {
             </div>
             
             {/* Floating Stats */}
-            <div className="absolute -bottom-6 -right-6 grid grid-cols-2 gap-4">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 grid grid-cols-2 gap-4">
               {stats.slice(0, 2).map((stat, index) => {
-                const IconComponent = stat.icon;
-                return (
-                  <Card key={index} className="card-neon p-4 text-center backdrop-blur-sm">
-                    <CardContent className="p-0">
-                      <IconComponent className="h-6 w-6 text-primary mx-auto mb-1" />
-                      <div className="text-xl font-bold text-gradient">{stat.value}</div>
-                      <div className="text-xs text-muted-foreground">{stat.label}</div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+              const IconComponent = stat.icon;
+              return;
+            })}
             </div>
           </div>
 
@@ -99,18 +95,12 @@ const AboutSection = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-              >
+              <Button variant="hero" size="lg" onClick={() => document.getElementById('services')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 View Our Packages
               </Button>
-              <Button 
-                variant="outline_neon" 
-                size="lg"
-                onClick={() => window.open('tel:239-834-2126')}
-              >
+              <Button variant="outline_neon" size="lg" onClick={() => window.open('tel:239-834-2126')}>
                 Call Now
               </Button>
             </div>
@@ -118,21 +108,17 @@ const AboutSection = () => {
             {/* Additional Stats */}
             <div className="grid grid-cols-2 gap-4 pt-4">
               {stats.slice(2).map((stat, index) => {
-                const IconComponent = stat.icon;
-                return (
-                  <div key={index} className="text-center">
+              const IconComponent = stat.icon;
+              return <div key={index} className="text-center">
                     <IconComponent className="h-8 w-8 text-primary mx-auto mb-2" />
                     <div className="text-2xl font-bold text-gradient">{stat.value}</div>
                     <div className="text-sm text-muted-foreground">{stat.label}</div>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
