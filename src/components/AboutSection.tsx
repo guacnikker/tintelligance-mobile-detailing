@@ -36,7 +36,7 @@ const AboutSection = () => {
             </div>
             
             {/* Floating Stats */}
-            <div className="absolute -top-6 -right-6 grid grid-cols-2 gap-4">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 grid grid-cols-2 gap-4">
               {stats.slice(0, 2).map((stat, index) => {
                 const IconComponent = stat.icon;
                 return (
