@@ -25,6 +25,17 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        {/* Mobile Stats Section - Top on Mobile */}
+        <div className="block sm:hidden mb-6">
+          <p className="text-lg text-neon-magenta font-light mb-2">
+            SWFL's Best Luxury Mobile Detailers
+          </p>
+          <p className="text-base text-neon-teal font-semibold">
+            500+ Happy Customers
+          </p>
+        </div>
+        
         {/* Logo */}
         <div className="mb-6 sm:mb-8 flex justify-center">
           <img 
@@ -42,10 +53,16 @@ const HeroSection = () => {
           </span>
         </h1>
         
-        {/* Tagline */}
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 font-light px-2">
-          <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
-        </p>
+        {/* Desktop Stats Section - Hidden on Mobile */}
+        <div className="hidden sm:block">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 font-light px-2">
+            <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
+          </p>
+          <p className="text-base text-neon-teal font-semibold mb-3">
+            500+ Happy Customers
+          </p>
+        </div>
+        
         <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
           Professional mobile car detailing in Naples, Fort Myers, Cape Coral & Southwest Florida. 
           Premium exterior, interior, and hybrid detailing packages with ceramic coating and paint correction services. 
