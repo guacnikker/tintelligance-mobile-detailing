@@ -28,24 +28,6 @@ const GallerySection = () => {
       title: "Interior Restoration",
       category: "Apex Interior",
       description: "Meticulous interior detailing and restoration work"
-    },
-    {
-      src: heroCarImage,
-      title: "Final Results",
-      category: "Before & After",
-      description: "The finished product showcasing our attention to detail"
-    },
-    {
-      src: exteriorDetailImage,
-      title: "Paint Correction",
-      category: "Premium Service",
-      description: "Advanced paint correction and ceramic coating application"
-    },
-    {
-      src: interiorDetailImage,
-      title: "Luxury Interior Care",
-      category: "Apex Package",
-      description: "Complete interior transformation with premium care"
     }
   ];
 
