@@ -24,53 +24,53 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-secondary/20 rounded-full blur-xl animate-float" style={{ animationDelay: "1s" }} />
       
       {/* Content */}
-      <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Logo */}
-        <div className="mb-8 flex justify-center">
+        <div className="mb-6 sm:mb-8 flex justify-center">
           <img 
             src={tintelligentLogo} 
             alt="Tintelligent Mobile Detailing - Southwest Florida's premier car detailing service logo"
-            className="h-32 w-32 md:h-40 md:w-40 rounded-full shadow-neon animate-pulse-neon"
+            className="h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40 rounded-full shadow-neon animate-pulse-neon"
           />
         </div>
         
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 leading-tight">
           <span className="text-gradient animate-glow block">TINTELLIGENT</span>
-          <span className="text-neon-teal text-2xl md:text-4xl lg:text-5xl font-normal tracking-widest block mt-2">
+          <span className="text-neon-teal text-xl sm:text-2xl md:text-4xl lg:text-5xl font-normal tracking-widest block mt-1 sm:mt-2">
             MOBILE DETAILING
           </span>
         </h1>
         
         {/* Tagline */}
-        <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-4 font-light">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 font-light px-2">
           <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
         </p>
-        <p className="text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
           Professional mobile car detailing in Naples, Fort Myers, Cape Coral & Southwest Florida. 
           Premium exterior, interior, and hybrid detailing packages with ceramic coating and paint correction services. 
           We bring luxury-grade automotive care directly to your location.
         </p>
         
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-16 px-4">
           <Button 
             variant="hero" 
-            size="xl"
-            className="w-full sm:w-auto group"
+            size="lg"
+            className="w-full sm:w-auto group text-sm sm:text-base"
             onClick={() => window.open('tel:239-834-2126')}
           >
             Call Now to Book
-            <ArrowDown className="ml-2 h-5 w-5 group-hover:animate-bounce" />
+            <ArrowDown className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-bounce" />
           </Button>
           
           <Button 
             variant="outline_neon" 
-            size="xl"
-            className="w-full sm:w-auto"
+            size="lg"
+            className="w-full sm:w-auto text-sm sm:text-base"
             onClick={() => window.open('tel:239-834-2126')}
           >
-            <Phone className="mr-2 h-5 w-5" />
+            <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
             239-834-2126
           </Button>
         </div>
