@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Phone } from "lucide-react";
 import heroCarImage from "@/assets/hero-car.jpg";
-import tintelligentLogo from "/lovable-uploads/699fe651-77a8-4f4c-a26e-d0dab3451ef3.png";
+import tintelligentLogo from "/lovable-uploads/04738aea-e1b4-4ae6-b460-d48cc909f361.png";
 
 const HeroSection = () => {
   const scrollToServices = () => {
@@ -46,6 +46,12 @@ const HeroSection = () => {
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 font-light px-2">
           <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
         </p>
+        
+        {/* Professional Motto */}
+        <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-2 sm:mb-3 font-medium italic tracking-wide">
+          "We are asset depreciation prevention specialists"
+        </p>
+        
         <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
           Professional mobile car detailing in Naples, Fort Myers, Cape Coral & Southwest Florida. 
           Premium exterior, interior, and hybrid detailing packages with ceramic coating and paint correction services. 
