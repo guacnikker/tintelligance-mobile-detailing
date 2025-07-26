@@ -68,39 +68,6 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            {/* Current Promotion */}
-            <Card className="card-neon border-yellow-400/50">
-              <CardHeader>
-                <Badge className="bg-yellow-400 text-black w-fit mb-2">
-                  LIMITED TIME
-                </Badge>
-                <CardTitle className="text-yellow-400">
-                  Special Promotion
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gradient mb-2">
-                    Full Detail $325
-                  </div>
-                  <div className="text-sm text-muted-foreground line-through mb-2">
-                    Reg. $375
-                  </div>
-                  <p className="text-sm text-yellow-400 font-semibold mb-4">
-                    Promotion ends this week. Call now to book!
-                  </p>
-                  <Button 
-                    variant="outline_neon" 
-                    size="lg"
-                    onClick={() => window.open('tel:239-834-2126')}
-                    className="w-full"
-                  >
-                    <Phone className="w-4 h-4 mr-2" />
-                    Call to Book Now
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Phone } from "lucide-react";
 import heroCarImage from "@/assets/hero-car.jpg";
-import tintelligentLogo from "/lovable-uploads/699fe651-77a8-4f4c-a26e-d0dab3451ef3.png";
+import tintelligentLogo from "/lovable-uploads/602ae080-3c25-42b6-8a8a-c24abbb2c96e.png";
 
 const HeroSection = () => {
   const scrollToServices = () => {
