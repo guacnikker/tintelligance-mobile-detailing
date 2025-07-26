@@ -62,10 +62,10 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4">
-            Client Testimonials
+            5-Star Mobile Car Detailing Reviews - Southwest Florida
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied clients have to say about their experience with Tintelligent.
+            Real reviews from satisfied customers throughout Naples, Fort Myers, Cape Coral and SWFL. See why we're the top-rated mobile car detailing service in Southwest Florida.
           </p>
         </div>
 

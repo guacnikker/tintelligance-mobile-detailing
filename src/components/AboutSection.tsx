@@ -30,11 +30,11 @@ const AboutSection = () => {
           {/* Image Side */}
           <div className="relative h-full">
             <div className="relative overflow-hidden rounded-2xl h-full min-h-[400px] lg:min-h-[600px]">
-              <img 
-                src={interiorDetailImage} 
-                alt="Professional mobile car detailing service in Southwest Florida - interior detailing work being performed by certified technicians" 
-                className="w-full h-full object-cover" 
-              />
+                <img 
+                  src={interiorDetailImage} 
+                  alt="Professional mobile car interior detailing service in Naples Florida - luxury auto detailing technician cleaning vehicle interior in Southwest Florida" 
+                  className="w-full h-full object-cover" 
+                />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
               
               {/* Floating Badge */}
@@ -67,13 +67,13 @@ const AboutSection = () => {
           <div className="flex flex-col justify-center space-y-8 h-full">
             <div className="text-center lg:text-left">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gradient mb-6">
-                About Tintelligent Mobile Detailing
+                Southwest Florida's Premier Mobile Car Detailing Service
               </h2>
               <div className="space-y-4 text-base lg:text-lg text-foreground/90 leading-relaxed">
                 <p>
                   Welcome to <span className="text-neon-teal font-semibold">Tintelligent Mobile Detailing</span>, 
-                  Southwest Florida's premier luxury automotive care service. We bring professional-grade 
-                  detailing directly to your location, combining convenience with uncompromising quality.
+                  Southwest Florida's premier luxury mobile car detailing service serving Naples, Fort Myers, Cape Coral, and Bonita Springs. We bring professional-grade 
+                  auto detailing, ceramic coating, and paint correction directly to your location throughout SWFL.
                 </p>
                 <p>
                   Our <span className="text-neon-magenta font-semibold">three-tier system</span> ensures 
@@ -81,9 +81,9 @@ const AboutSection = () => {
                   maintenance to apex-level perfection that rivals the finest detailing facilities.
                 </p>
                 <p>
-                  Using cutting-edge techniques and premium products, we transform your vehicle's 
-                  appearance while protecting your investment. Every detail matters, every surface 
-                  is perfected, and every client experience exceeds expectations.
+                  Using cutting-edge car detailing techniques and premium products, we transform your vehicle's 
+                  appearance while protecting your investment. From luxury cars and SUVs to boats and RVs in Southwest Florida, 
+                  every detail matters, every surface is perfected, and every client experience exceeds expectations.
                 </p>
               </div>
             </div>

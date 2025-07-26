@@ -10,10 +10,10 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4">
-            Contact Us
+            Contact Southwest Florida's Premier Mobile Detailing Service
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to experience SWFL's premier mobile detailing? Call us now to schedule your appointment.
+            Ready to experience Naples, Fort Myers, and Cape Coral's best mobile car detailing? Call 239-834-2126 now to schedule your appointment throughout SWFL.
           </p>
         </div>
 

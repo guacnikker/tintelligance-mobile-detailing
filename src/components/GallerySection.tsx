@@ -15,6 +15,15 @@ const GallerySection = () => {
     "/lovable-uploads/52c4360c-6e2a-4a70-b9d2-5c537e1d4962.png"
   ];
 
+  const galleryAltTexts = [
+    "Professional mobile car detailing results in Southwest Florida - luxury vehicle exterior wash and wax",
+    "Interior car detailing service in Fort Myers FL - deep cleaning and leather conditioning",
+    "Mobile ceramic coating application in Naples Florida - paint protection and shine enhancement",
+    "SUV detailing service in Cape Coral - complete exterior and interior transformation",
+    "Premium boat detailing service in Southwest Florida - marine vessel cleaning and protection",
+    "Mobile RV detailing in SWFL - recreational vehicle exterior wash and interior cleaning"
+  ];
+
   const openLightbox = (index: number) => {
     setSelectedImage(index);
   };
@@ -40,10 +49,10 @@ const GallerySection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4">
-            Our Work Gallery
+            Mobile Car Detailing Gallery - Naples, Fort Myers & Cape Coral Results
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See the transformative results of our premium detailing services. Each vehicle tells a story of meticulous care and attention to detail.
+            See the transformative results of our premium mobile car detailing services throughout Southwest Florida. Each vehicle showcases our expert interior detailing, exterior cleaning, ceramic coating, and paint correction work.
           </p>
         </div>
 
@@ -58,7 +67,7 @@ const GallerySection = () => {
               <div className="relative">
                 <img 
                   src={imageSrc}
-                  alt={`Car detailing work ${index + 1}`}
+                  alt={galleryAltTexts[index]}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300 rounded-xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
@@ -119,7 +128,7 @@ const GallerySection = () => {
             <div className="relative">
               <img 
                 src={galleryImages[selectedImage]}
-                alt={`Car detailing work ${selectedImage + 1}`}
+                alt={galleryAltTexts[selectedImage]}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
               />
             </div>

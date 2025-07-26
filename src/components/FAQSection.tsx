@@ -41,10 +41,10 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-gradient mb-4">
-            Frequently Asked Questions
+            Mobile Car Detailing FAQ - Naples, Fort Myers & Cape Coral
           </h2>
           <p className="text-xl text-muted-foreground">
-            Common questions about our mobile car detailing services in Southwest Florida
+            Common questions about our mobile car detailing, ceramic coating, interior cleaning, and RV/boat detailing services in Southwest Florida
           </p>
         </div>
 

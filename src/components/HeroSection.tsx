@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="mb-6 sm:mb-8 flex justify-center">
           <img 
             src={tintelligentLogo} 
-            alt="Tintelligent Mobile Detailing - Southwest Florida's premier car detailing service logo"
+            alt="Tintelligent Mobile Detailing logo - premier mobile car detailing service in Naples FL, Fort Myers, Cape Coral and Southwest Florida"
             className="h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40 rounded-full shadow-neon animate-pulse-neon"
           />
         </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
         
         {/* Tagline */}
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 font-light px-2">
-          <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
+          <span className="text-neon-magenta">Naples, Fort Myers & Cape Coral's Premier Mobile Car Detailing</span>
         </p>
         
         {/* Motto */}
@@ -52,9 +52,9 @@ const HeroSection = () => {
           We are asset depreciation prevention specialists
         </p>
         <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
-          Professional mobile car detailing in Naples, Fort Myers, Cape Coral & Southwest Florida. 
-          Premium exterior, interior, and hybrid detailing packages with ceramic coating and paint correction services. 
-          We bring luxury-grade automotive care directly to your location.
+          Expert mobile car detailing services serving Naples, Fort Myers, Cape Coral, Bonita Springs & all of Southwest Florida. 
+          Luxury exterior detailing, interior cleaning, ceramic coating, paint correction, and RV/boat detailing packages. 
+          We bring professional automotive care directly to your driveway throughout SWFL.
         </p>
         
         {/* CTA Buttons */}

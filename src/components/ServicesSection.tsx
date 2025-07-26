@@ -227,12 +227,12 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4">
-            Car Detailing Services in Southwest Florida
+            Mobile Car Detailing Services in Naples, Fort Myers & Cape Coral FL
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Professional mobile car detailing packages in Naples, Fort Myers, Cape Coral, and throughout SWFL. 
-            Choose from our three-tier system: Essential foundations, Elevated excellence, or Apex perfection.
-            Each package includes ceramic coating, paint correction, and luxury car care services.
+            Premium mobile auto detailing packages serving Naples, Fort Myers, Cape Coral, Bonita Springs and all of Southwest Florida. 
+            Choose from our three-tier system: Essential car wash, Elevated detailing excellence, or Apex perfection.
+            Exterior detailing, interior cleaning, ceramic coating, paint correction, and RV/boat detailing available.
           </p>
         </div>
 
