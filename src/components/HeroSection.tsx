@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Phone } from "lucide-react";
 import heroCarImage from "@/assets/hero-car.jpg";
-import tintelligentLogo from "/lovable-uploads/04738aea-e1b4-4ae6-b460-d48cc909f361.png";
+import tintelligentLogo from "/lovable-uploads/4bf33452-0019-4c74-a757-3a32698e4214.png";
 
 const HeroSection = () => {
   const scrollToServices = () => {
@@ -30,7 +30,7 @@ const HeroSection = () => {
           <img 
             src={tintelligentLogo} 
             alt="Tintelligent Mobile Detailing - Southwest Florida's premier car detailing service logo"
-            className="h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40 rounded-full shadow-neon animate-pulse-neon"
+            className="h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 shadow-neon animate-pulse-neon"
           />
         </div>
         
