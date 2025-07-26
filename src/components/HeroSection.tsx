@@ -46,6 +46,11 @@ const HeroSection = () => {
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 font-light px-2">
           <span className="text-neon-magenta">SWFL's Best Luxury Mobile Detailers</span>
         </p>
+        
+        {/* Motto */}
+        <p className="text-sm sm:text-base md:text-lg text-accent-foreground/90 mb-4 sm:mb-6 font-medium tracking-wide uppercase px-4">
+          We are asset depreciation prevention specialists
+        </p>
         <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
           Professional mobile car detailing in Naples, Fort Myers, Cape Coral & Southwest Florida. 
           Premium exterior, interior, and hybrid detailing packages with ceramic coating and paint correction services. 
