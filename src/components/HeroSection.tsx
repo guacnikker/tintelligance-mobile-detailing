@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Phone } from "lucide-react";
 import heroCarImage from "@/assets/hero-car.jpg";
+import LogoProcessor from "./LogoProcessor";
 // Logo will be loaded from public folder
 
 const HeroSection = () => {
@@ -86,6 +87,8 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
+      
+      <LogoProcessor />
     </section>
   );
 };
