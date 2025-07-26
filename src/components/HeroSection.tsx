@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Phone } from "lucide-react";
 import heroCarImage from "@/assets/hero-car.jpg";
-import tintelligentLogo from "@/assets/tintelligent-logo-transparent.png";
+// Logo will be loaded from public folder
 
 const HeroSection = () => {
   const scrollToServices = () => {
@@ -28,9 +28,9 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-6 sm:mb-8 flex justify-center">
           <img 
-            src={tintelligentLogo} 
+            src="/lovable-uploads/54176d49-0551-4a0a-91a8-5f6d1ac4bbde.png" 
             alt="Tintelligent Mobile Detailing - Southwest Florida's premier car detailing service logo"
-            className="h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40 rounded-full shadow-neon animate-pulse-neon"
+            className="h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40 shadow-neon animate-pulse-neon"
           />
         </div>
         
