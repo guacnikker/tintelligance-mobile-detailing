@@ -48,7 +48,7 @@ const HeroSection = () => {
         </p>
         
         {/* Motto */}
-        <p className="text-sm sm:text-base md:text-lg text-accent-foreground/90 mb-4 sm:mb-6 font-medium tracking-wide uppercase px-4">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-neon-teal mb-6 sm:mb-8 font-bold tracking-wider uppercase px-4 animate-pulse">
           We are asset depreciation prevention specialists
         </p>
         <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
