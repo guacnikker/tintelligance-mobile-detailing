@@ -1,34 +1,18 @@
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import exteriorDetailImage from "@/assets/exterior-detail.jpg";
-import interiorDetailImage from "@/assets/interior-detail.jpg";
-import heroCarImage from "@/assets/hero-car.jpg";
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
-    {
-      src: heroCarImage,
-      title: "Apex Hybrid Detail",
-      category: "Luxury Sports Car",
-      description: "Complete transformation with our premium hybrid package"
-    },
-    {
-      src: exteriorDetailImage,
-      title: "Exterior Detail in Progress",
-      category: "Elevated Package", 
-      description: "Professional exterior detailing with premium products"
-    },
-    {
-      src: interiorDetailImage,
-      title: "Interior Restoration",
-      category: "Apex Interior",
-      description: "Meticulous interior detailing and restoration work"
-    }
+    "/lovable-uploads/c9fcb32e-3e0d-4cae-b586-7b033feb8e43.png",
+    "/lovable-uploads/846cd544-0679-44d8-b64b-8a5de0e3fc00.png",
+    "/lovable-uploads/4495cfcc-5d08-4b42-8323-11604e0b7a4a.png",
+    "/lovable-uploads/a5d03e0c-e78c-4b48-8c64-64c9b9e96377.png",
+    "/lovable-uploads/b943876c-bb59-4e59-82ab-105c7d37b4dd.png",
+    "/lovable-uploads/52c4360c-6e2a-4a70-b9d2-5c537e1d4962.png"
   ];
 
   const openLightbox = (index: number) => {
@@ -65,30 +49,19 @@ const GallerySection = () => {
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {galleryImages.map((image, index) => (
+          {galleryImages.map((imageSrc, index) => (
             <Card 
               key={index}
-              className="card-neon overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-300"
+              className="card-neon overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-300 rounded-xl"
               onClick={() => openLightbox(index)}
             >
               <div className="relative">
                 <img 
-                  src={image.src}
-                  alt={image.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  src={imageSrc}
+                  alt={`Car detailing work ${index + 1}`}
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300 rounded-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
-                {/* Category Badge */}
-                <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground">
-                  {image.category}
-                </Badge>
-                
-                {/* Hover Content */}
-                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-lg font-semibold text-neon-teal mb-1">{image.title}</h3>
-                  <p className="text-sm text-foreground/80">{image.description}</p>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
               </div>
             </Card>
           ))}
@@ -117,7 +90,7 @@ const GallerySection = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute top-4 right-4 z-10 text-white hover:text-primary bg-black/50 hover:bg-black/70"
+              className="absolute top-4 right-4 z-10 text-white hover:text-primary bg-black/50 hover:bg-black/70 rounded-full"
               onClick={closeLightbox}
             >
               <X className="h-6 w-6" />
@@ -127,7 +100,7 @@ const GallerySection = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-primary bg-black/50 hover:bg-black/70"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-primary bg-black/50 hover:bg-black/70 rounded-full"
               onClick={prevImage}
             >
               <ChevronLeft className="h-6 w-6" />
@@ -136,7 +109,7 @@ const GallerySection = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-primary bg-black/50 hover:bg-black/70"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:text-primary bg-black/50 hover:bg-black/70 rounded-full"
               onClick={nextImage}
             >
               <ChevronRight className="h-6 w-6" />
@@ -145,23 +118,10 @@ const GallerySection = () => {
             {/* Image */}
             <div className="relative">
               <img 
-                src={galleryImages[selectedImage].src}
-                alt={galleryImages[selectedImage].title}
+                src={galleryImages[selectedImage]}
+                alt={`Car detailing work ${selectedImage + 1}`}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
               />
-              
-              {/* Image Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
-                <h3 className="text-2xl font-bold text-neon-teal mb-2">
-                  {galleryImages[selectedImage].title}
-                </h3>
-                <Badge className="mb-2 bg-primary/90 text-primary-foreground">
-                  {galleryImages[selectedImage].category}
-                </Badge>
-                <p className="text-foreground/90">
-                  {galleryImages[selectedImage].description}
-                </p>
-              </div>
             </div>
             
             {/* Image Counter */}
