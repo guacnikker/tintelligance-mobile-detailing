@@ -30,7 +30,7 @@ const HeroSection = () => {
           <img 
             src={tintelligentLogo} 
             alt="Tintelligent Mobile Detailing logo - premier mobile car detailing service in Naples FL, Fort Myers, Cape Coral and Southwest Florida"
-            className="h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 shadow-neon animate-pulse-neon"
+            className="h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 shadow-neon animate-pulse-neon mix-blend-screen"
           />
         </div>
         
