@@ -2,8 +2,26 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Phone } from "lucide-react";
 import heroCarImage from "@/assets/hero-car.jpg";
 import tintelligentLogo from "/lovable-uploads/8f4a9783-82ac-400f-a4aa-234e92f6664e.png";
+import { useState, useEffect } from "react";
+import { processLogoBackground } from "@/utils/processLogo";
 
 const HeroSection = () => {
+  const [processedLogo, setProcessedLogo] = useState<string>(tintelligentLogo);
+  
+  useEffect(() => {
+    const processLogo = async () => {
+      try {
+        const processed = await processLogoBackground(tintelligentLogo);
+        setProcessedLogo(processed);
+      } catch (error) {
+        console.error('Failed to process logo:', error);
+        // Fallback to original logo
+      }
+    };
+    
+    processLogo();
+  }, []);
+
   const scrollToServices = () => {
     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -28,9 +46,9 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-6 sm:mb-8 flex justify-center">
           <img 
-            src={tintelligentLogo} 
+            src={processedLogo} 
             alt="Tintelligent Mobile Detailing logo - premier mobile car detailing service in Naples FL, Fort Myers, Cape Coral and Southwest Florida"
-            className="h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 shadow-neon animate-pulse-neon mix-blend-screen"
+            className="h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 shadow-neon animate-pulse-neon"
           />
         </div>
         
